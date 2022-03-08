@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+.body{
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+header {
+    display: flex;
+    background: hotpink;
+    width: 90%;
+}
+
+.logopic {
+    width: 30%;
+    height: 60%;
+}
+
+.logo-container{
+    background: lightblue;
+    flex: 1;
+}
+
+nav {
+    background: green;
+}
+
+.log-sign {
+    background: red;
+}
+

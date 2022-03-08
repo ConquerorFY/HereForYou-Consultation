@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: darkturquoise;
+    height: auto;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    background: dodgerblue;
+    width: 100vw;
+    height: 12vh;
+}
+
+.logo {
+    color:#fff;
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2 rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+        -30px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+#landing {
+    background: lightskyblue;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+#landing-text h2 {
+    color: whitesmoke;
+}
+
+#landing-image {
+    background: url(https://source.unsplash.com/rRWiVQzLm7k);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #fff solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.btn-content {
+        padding: 0.5rem 2rem;
+        border: 1px #fff solid;
+        display: inline-block;
+        margin: 0.2rem 0 0;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white;
+        transition: background 500ms ease;
+}
+
+.btn-content:hover {
+    background: #fff;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+    background: lightblue;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+/*Screen Size 500px and Up*/
+@media(min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+
+    .gif {
+        Height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .photos {
+        Height: 70vh;
+    }
+
+    .container {
+        left: 85%;
+    }
+}
+
+/*Screen size 700px and Up*/
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+
+    .gif {
+        Height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .photos {
+        Height: 70vh;
+    }
+
+    .container {
+        left: 85%;
+    }
+
+}
+
+
+

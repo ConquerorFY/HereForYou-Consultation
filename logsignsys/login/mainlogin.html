@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HFYC | Login Page</title>
+    <center><img src="icon.png" class="logo"></center>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="browsericon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h2 class="title"><b>Log in to Your HFYC Account</b></h2>
+    <br>
+</head>
+<br><br>
+
+<body>
+    <div class="center">
+        <center>
+            <form method='POST' action='../connection/login.con.php'>
+                <div class="input-field">
+                    <input type="text" id="username" name="username" required><label>Username</label>
+                </div>
+                <br>
+                <div class="input-field">
+                    <input type="password" id="password" name="password" autocomplete="new-password"required>
+                        <label>Password</label>
+                    <span><i class="fa fa-eye" id="eye" onclick="showHide();"></i> </span>
+                </div><br>
+                <div class="input-field">
+                <select name="roles" id="roles" class="user-role">
+                      <option value= "" selected = "selected" class="select">Select User Role</option>
+                      <option value="Admin" class="select">Admin</option>
+                      <option value="Consultor" class="select">Consultor</option>
+                      <option value="User" class="select">User</option>
+                 </select><label>User Role</label>
+                </div>
+                <br><br>
+                <input type="submit" value="Log In" id="btnsubmit" name="login-submit">
+
+                <br><br>
+                <p><a href="sendlink.html" class="link">Forgotten Password?</a> | <a
+                        href="/Users/premsharaan/Documents/project/helloworld/WDT_Prject/student_register.html"
+                        class="link">Sign up for HFYConsultation</a></p>
+            </form>
+        </center>
+    </div>
+</body>
+<footer class="footer">
+    <div class="descriptions">
+        <a>HOME</a>
+        <a>ABOUT</a>
+        <a>HELP</a>
+        <a>PRIVACY</a>
+        <a>TERMS</a>
+    </div>
+</footer>
+<script type="text/javascript">
+    const password = document.getElementById("password");
+    const eye = document.getElementById("eye");
+
+    function showHide() {
+        if (password.type === 'password') {
+            password.setAttribute('type', 'text');
+            eye.style.color = 'Aqua';
+            toggle.classlist.add('hide')
+
+        } else {
+            password.setAttribute('type', 'password');
+            eye.style.color = 'white';
+            toggle.classlist.remove('hide')
+        }
+    }
+
+</script>
+</html>

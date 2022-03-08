@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    height: auto;
+    background: cornflowerblue;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+        -30px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+.editprofile {
+    background-color: #00498D;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.editprofile h1 {
+    font-size: 3rem;
+    margin: auto;
+    background: lightskyblue;
+    font-style: italic;
+}
+
+.editprofile h2 {
+    font-size: 1rem;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.profile-pic {
+    padding: 10px 0px 5px 85px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.user-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.img-select-button {
+    margin-left: 78px;
+    padding-bottom: 20px;
+}
+
+.btn-file {
+    border: none;
+    border-radius: 50px;
+    padding-bottom: 5px;    
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    height: 25px;
+    width: 200px;
+    background: #00498D;
+    color: #fff;
+}
+
+.btn-submit {
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 220px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 15px 5px 0px;
+    background: #00498D;
+    color: #fff;
+}
+
+.profile-info {
+    margin: auto;
+    width: 95vw;
+}
+
+.info-form {
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    background: lightgray;
+} 
+
+.info-form label {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.info-form input {
+    width: 88vw;
+}
+
+.extend {
+    width: 88vw;
+    height: 100px;
+    resize: none;
+}
+
+.info-form button {
+    margin-top: 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: royalblue;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 0rem 0rem 2rem 0rem;
+    margin: auto;
+    color: #333;
+    line-height: 0.5;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.social-media {
+    margin-bottom: 50px;
+}
+
+.fab {
+    height: 30px;
+    width: 50px;
+    padding-top: 15px;
+    border-radius: 50px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-twitter {
+    background: lightskyblue;
+    color: white;
+}
+
+.fa-discord {
+    background: black;
+    color: #fff;
+}
+
+.fa-microsoft {
+    background: #fff;
+    color: royalblue;
+}
+
+.fa-instagram {
+    background: hotpink;
+    color: #fff;
+}
+
+@media(min-width:500px) {
+    .profile-pic {
+        margin-bottom: 10px;
+        padding-left: 280px;
+        background: #fff;
+    }
+
+    .user-pic {
+        width: 350px;
+        height: 350px;
+        border-radius: 200px;
+    }
+
+    .img-select-button {
+        margin-left: 240px;
+        padding-bottom: 0px;
+        transition: 0.3s;
+    }
+
+    .btn-submit {
+        width: 260px;
+        padding-left: 10px;
+        height: 25px;
+        padding-bottom: 29px;
+    }
+
+    .btn-file, .btn-submit {
+        transition: 0.3s;
+    }
+
+    .btn-file:hover ,.btn-submit:hover {
+        background: royalblue;
+        color: yellow;
+    }
+
+
+    .info-form {
+        width: 63vw;
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+
+    .info-form label {
+        font-size: 1.5rem;
+    }
+    
+    .info-form input {
+        width: 61vw;
+        height: 30px;
+        font-size: 2rem;
+    }
+
+    .extend {
+        width: 61vw;
+        font-size: 2rem;
+    }
+
+    .info-form button {
+        transition: 0.3s;
+    }
+
+    .info-form button:hover {
+        color: yellow;
+        background: #00498D;
+    }
+
+    .social-media {
+        margin-bottom: 0px;
+    }
+
+    .fab:hover {
+        background: transparent;
+        color: cyan;
+    }
+}

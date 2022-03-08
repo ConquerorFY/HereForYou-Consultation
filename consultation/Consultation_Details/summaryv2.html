@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYFC Consultation Summary Page</title>
+    <link rel="stylesheet" href="stylev2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class='wrapper'>
+        <input type="checkbox" id="check" checked>
+        <!--header area start-->
+        <header>
+            <label for="check">
+                <i class="fas fa-bars" id="sidebar_btn"></i>
+            </label>
+            <div class="left_area">
+                <h3>HEREFORYOU <span>CONSULTATION</span></h3>
+            </div>
+            <div class="right_area">
+                <a href="#" class="logout_btn">Logout</a>
+            </div>
+        </header>
+        <!--header area end-->
+        <!--mobile navigation bar start-->
+        <div class="mobile_nav">
+            <div class="nav_bar">
+                <img src="profile_image.jpg" class="mobile_profile_image" alt="profile_image">
+                <i class="fa fa-bars nav_btn"></i>
+            </div>
+            <div class="mobile_nav_items">
+                <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+                <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+                <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+                <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+                <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+            </div>
+        </div>
+        <!--mobile navigation bar end-->
+        <!--sidebar start-->
+        <div class="sidebar">
+            <div class="profile_info">
+                <img src="profile_image.jpg" class="profile_image" alt="profile_image">
+                <h4>Saki Yoshida</h4>
+            </div>
+            <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+            <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+            <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+            <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+            <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+            <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+        </div>
+        <!--sidebar end-->
+
+        <div class="content">
+            <section>
+                <br>
+                <div class='overlay'>
+
+                    <div class="remainder">
+                        <button class="big-button" id="back" href=""><i class="fas fa-arrow-circle-left"></i> Go
+                            Back</button>
+                        <div class="title-border">
+                            <p> YOUR </p>
+                            <h1>Consultation<span>Summary</span>
+                            </h1>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold;">Consultor Name:</td>
+                                <td style="color: #1d2e68;">Ryan Lim Fang Yung</td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;">Consultor Email:</td>
+                                <td style="color: #1d2e68;">lim@gmail.com</td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;">Consultation Category:</td>
+                                <td style="color: #1d2e68;">Academic Troubles</td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;">Consultation Day:</td>
+                                <td style="color: #1d2e68;">2021-02-01 (Monday)</td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;"> Consultation Time:</td>
+                                <td style="color: #1d2e68;">1:00 p.m. - 1:30 p.m.</td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;">Consultation Duration:</td>
+                                <td style="color: #1d2e68;">30 minutes</td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;">Consultation Platform:</td>
+                                <td style="color: #1d2e68;">Microsoft Teams</td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;">Consultation Link:</td>
+                                <td style="color: #1d2e68;"><a href="https://www.teams.com"
+                                        target="_blank">https://www.teams.com</a></td>
+                            </tr>
+                        </table>
+
+
+                        <p style="color:#294e99; font-weight: bold;">
+                            Reminder:
+                        <ul type="circle" style="color:black;">
+                            <li>The consultation will be carried out in a face-to-face manner, please ensure that you
+                                have a working camera before the consultation.</li>
+                            <li>If unable to attend the consultation, kindly notify the consultor through his/her email
+                                beforehand to cancel the consultation.</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <div class="btncontainer">
+                            <a href="#" class="btnSubmit effect01" target="_blank"><span>Confirm Consultation</span></a>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.nav_btn').click(function () {
+                    $('.mobile_nav_items').toggleClass('active');
+                });
+            });
+        </script>
+        <footer>
+            <h3>Get in Touch</h3>
+            <p>Email or call us if you have any questions</p>
+            <p>Email: <strong>contact@hfyc.test</strong></p>
+            <p>Phone:
+                <strong>+601131313131</strong>
+            </p>
+            <p class="social-media">
+                <a href="#"><i class="fab fa-facebook" onclick=""></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-microsoft"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

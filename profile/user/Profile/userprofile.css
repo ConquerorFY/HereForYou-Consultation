@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    height: auto;
+    background: cornflowerblue;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+        -30px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+.profile-username {
+    background-color: #00498D;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-username h1 {
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 3rem;
+    margin: auto;
+    font-style: italic;
+}
+
+.profile-content {
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding-top: 3px;
+    /*background: #fff; can add picture */
+}
+
+.profile-picture-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.profile-picture {
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 150px;
+    border-style: none;
+    padding-bottom: 3px;
+}
+
+.profile-table {
+    font-size: 16px;
+    background: lightskyblue;
+    width: 100%;
+}
+
+.profile-table th{
+    text-align: right;
+    padding: 2px 2px;   
+}
+
+.profile-table td {
+    text-align: justify;
+    line-height: 1.5;
+    padding-right: 5px;
+}
+
+.profile-buttons {
+    margin: 10px 20px 10px 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.profile-buttons button {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    border-style: none;
+    margin: 2px;
+    padding: 0;
+    background: lightskyblue;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.profile-buttons button:hover {
+    background: #3B5998;
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    padding: 0rem 0rem 2rem 0rem;
+    margin: auto;
+    color: #333;
+    line-height: 0.5;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.social-media {
+    margin-bottom: 50px;
+}
+
+.fab {
+    height: 30px;
+    width: 50px;
+    padding-top: 15px;
+    border-radius: 50px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-twitter {
+    background: lightskyblue;
+    color: white;
+}
+
+.fa-discord {
+    background: black;
+    color: #fff;
+}
+
+.fa-microsoft {
+    background: #fff;
+    color: royalblue;
+}
+
+.fa-instagram {
+    background: hotpink;
+    color: #fff;
+}
+
+@media(min-width:500px) {
+    .profile-username h1 {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .profile-picture {
+        justify-content: center;
+        align-items: center;
+        margin: 0.8rem 17rem 0.8rem 17rem;
+        width: 350px;
+        height: 350px;
+        border-radius: 170%;
+    }
+
+    .profile-table {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .profile-table th{
+        font-size: 1.5rem;
+        padding-right: 5px;
+    }
+
+    .profile-table td {
+        font-size: 1.5rem;
+    }
+
+    .profile-buttons {
+        width: 97%;
+        margin: auto;
+        padding-left: 150px;
+        padding-top: 10px;
+    }
+
+    .profile-buttons button{
+        font-size: 1.5rem;
+        width: 200px;
+        height: 50px;
+        border-style: none;
+        margin-right: 10px;
+    }
+
+    .profile-content {
+        margin: 0px 10px 10px 10px;
+    }
+
+    .social-media {
+        margin-bottom: 0px;
+    }
+
+    .fab:hover {
+        background: transparent;
+        color: orange;
+    }
+}
+
+@media(min-width:700px) {
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="editprofile.css">
+        <title>HFYC | Edit Profile</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="editprofile">
+                <h1>Edit Profile</h1>
+                <h2>You can change your user picture & details now!</h2>
+            </div>
+            <div class="editprofile-main-content">
+                <div class="profile-pic">
+                    <img src="lloyd.jpg" alt="user-pic" class="user-pic">
+                </div>
+                    <form class="img-select-button" method="post" action="" enctype="multipart/form-data">
+                        <input class="btn-file" type="file" name="file">
+                        <button class="btn-submit" name="img-submit">Upload & Save Image Changes</button>
+                    </form>
+                <div class="profile-info">
+                    <form class="info-form" method="post" action="">
+                        <label for="realname"><b>Real Name</b></label><br>
+                        <input type="realname" name="realname" value="" required><br>
+                        <label for="age"><b>Age</b></label><br>
+                        <input type="age" name="age" value="" required><br>
+                        <label for="email"><b>Email</b></label><br>
+                        <input type="email" name="email" value="" required><br>
+                        <label for="address"><b>Address</b></label><br>
+                        <textarea rows="4" cols="50" class="extend" type="address" name="address" value="" required></textarea><br>
+                        <label for="description"><b>Description</b></label><br>
+                        <textarea class="extend" type="description" name="description" value="" required></textarea><br>
+                        <center>
+                        <button class="btn-cancel" onclick="cancelEdit()">Cancel Edit</button>
+                        <button type="submit" class="btn-save">Save Changes Made</button> 
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <h3>Get in Touch</h3>
+        <p>Email or call us if you have any questions</p>
+        <p>Email: <strong>contact@hfyc.test</strong></p>
+        <p>Phone:
+            <strong>+601131313131</strong>
+        </p>
+        <p>Visit our Social Media!!!</p>
+        <p class="social-media">
+            <a href="#"><i class="fab fa-facebook" onclick=""></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-microsoft"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+
+    <!-- Add JS later-->
+    <script>
+        function cancelEdit() {
+
+        }
+    </script>
+</html>
